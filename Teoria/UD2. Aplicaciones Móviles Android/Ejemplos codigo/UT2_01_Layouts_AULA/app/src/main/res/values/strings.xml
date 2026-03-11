@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Layouts_AULA</string>
+
+    <string name="saludo">Hello World!</string>
+</resources>
