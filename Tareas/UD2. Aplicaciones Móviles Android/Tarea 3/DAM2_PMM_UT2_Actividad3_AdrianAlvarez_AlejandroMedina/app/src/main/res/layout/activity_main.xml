@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="209dp"
+        android:layout_height="88dp"
+        android:text="App con frases motivadoras"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="195dp"
+        android:layout_height="34dp"
+        android:background="@drawable/circulos_green"
+        android:onClick="descargarFrase"
+        android:text="Descarga Nueva Frase"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.726" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="193dp"
+        android:layout_height="34dp"
+        android:background="@drawable/circulos_blue"
+        android:onClick="ocultarFrases"
+        android:text="Ocultar Frases"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.306" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="189dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/circulos_brown"
+        android:onClick="eliminarFrase"
+        android:text="Eliminar Frases"
+        android:textColor="@color/white"
+
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn2"
+        app:layout_constraintVertical_bias="0.975" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/frases"
+        android:layout_width="293dp"
+        android:layout_height="302dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.659" />
+</androidx.constraintlayout.widget.ConstraintLayout>
