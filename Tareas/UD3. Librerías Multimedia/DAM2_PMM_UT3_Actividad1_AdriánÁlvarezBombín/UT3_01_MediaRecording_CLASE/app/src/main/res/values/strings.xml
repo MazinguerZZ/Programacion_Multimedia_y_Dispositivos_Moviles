@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">UT3_01_MediaRecording_CLASE</string>
+    <string name="grabar_audio">Grabar AUDIO</string>
+    <string name="parar_grabacion_audio">Parar AUDIO</string>
+    <string name="play_audio">Play AUDIO</string>
+    <string name="Captar_Imagen">Captar IMAGEN</string>
+    <string name="activar_video">Activar Video</string>
+    <string name="grabar_video">Grabar VIDEO</string>
+    <string name="parar_grabacion_video">Parar VIDEO</string>
+    <string name="reproducir_video">Play VIDEO</string>
+
+
+
+</resources>
